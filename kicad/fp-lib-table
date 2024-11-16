@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name lepetocontrol)(type KiCad)(uri ${KIPRJMOD}/lepetocontrol.pretty)(options "")(descr ""))
+  (lib (name skpmame010)(type KiCad)(uri ${KIPRJMOD}/skpmame010.pretty)(options "")(descr ""))
+)

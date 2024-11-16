@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name as5600)(type Legacy)(uri ${KIPRJMOD}/as5600.lib)(options "")(descr ""))
+  (lib (name oled)(type Legacy)(uri ${KIPRJMOD}/oled.lib)(options "")(descr ""))
+  (lib (name lepetocontrol-rescue)(type Legacy)(uri ${KIPRJMOD}/lepetocontrol-rescue.lib)(options "")(descr ""))
+)
