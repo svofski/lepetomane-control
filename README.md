@@ -21,6 +21,6 @@ Made in KiCad 5, so KiCanvas doesn't pick it up.
  * [Schematics](doc/lepetocontrol.pdf)
 
 ## TODO
- [-] remove dependencies on Wire and libmaple 
- [-] add support for buttons and OLED
- [-] try a second row of knobs
+ - [ ] remove dependencies on Wire and libmaple
+ - [ ] add support for buttons and OLED
+ - [ ] try a second row of knobs
