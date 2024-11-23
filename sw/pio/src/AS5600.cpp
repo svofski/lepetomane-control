@@ -480,5 +480,6 @@ void AMS_5600::writeOneByte(int adr_in, int dat_in)
 void wire_begin(void)
 {
     Wire.begin();
+    Wire.setClock(1'000'000);
 }
 

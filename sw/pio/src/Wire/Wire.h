@@ -47,7 +47,7 @@ class TwoWire : public WireBase {
 private:
     i2c_dev* sel_hard;
     uint8    dev_flags;
-	uint32	frequency; //new variable to store i2c frequency
+    uint32	frequency; //new variable to store i2c frequency
 protected:
     /*
      * Processes the incoming I2C message defined by WireBase to the
@@ -63,15 +63,15 @@ public:
      */
     TwoWire(uint8 dev_sel, uint8 flags = 0, uint32 freq = 100000);
 	
-	/*
-	 * Shuts down (disables) the hardware I2C
-	 */
-	void end();
+    /*
+     * Shuts down (disables) the hardware I2C
+     */
+    void end();
 
-	/*
-	* Sets the hardware I2C clock
-	*/
-	void setClock(uint32_t frequencyHz);
+    /*
+     * Sets the hardware I2C clock
+     */
+    void setClock(uint32_t frequencyHz);
     /*
      * Disables the I2C device and remove the device address.
      */

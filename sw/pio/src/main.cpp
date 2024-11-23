@@ -6,7 +6,7 @@
 #include <libopencm3/cm3/nvic.h>
 
 //#include "usrat.h"
-//#include "xprintf.h"
+#include "xprintf.h"
 #include "borat.h"
 #include "usbcmp.h"
 #include "midi.h"
@@ -15,16 +15,21 @@
 
 #include "u8g2.h"
 
+#include <cmath>
+
 #define PWM_BITS 7
 #define N_KNOBS 4
 #define N_LED_GROUPS (N_KNOBS * 2)
+
+#define KNOB_CHANGE_HOLD  100
+#define SILENCE_HOLD  20
 
 AMS_5600 as5600;
 
 extern bool usb_configured_flag;
 
 //1/(1+EXP(((A2/21)-6)*-1))*255
-const uint8_t pwm_linearize[128] = 
+static const uint8_t pwm_linearize[128] = 
 {
                                                     
     0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 
@@ -102,8 +107,8 @@ struct LedRefresh {
         spi_set_bidirectional_transmit_only_mode(SPI1);
 
         // examples have this but i don't know why...
-        //spi_enable_software_slave_management(SPI1);
-        //spi_set_nss_high(SPI1);
+        spi_enable_software_slave_management(SPI1);
+        spi_set_nss_high(SPI1);
 
         spi_enable(SPI1);
 
@@ -119,7 +124,7 @@ struct LedRefresh {
         }
         else {
             gpio_clear(gpio_port, gpio_latch);
-            for (unsigned i = 0; i < 30; ++i) { __asm__("nop"); }
+            for (unsigned i = 0; i < 35; ++i) { __asm__("nop"); }
         }
     }
 
@@ -130,6 +135,7 @@ struct LedRefresh {
         latch(0);
     }
 
+    // iterate with 1 as column selector (group) in msb and bitmap as rows in lsb
     void refresh()
     {
         spi_send(SPI1, 0);
@@ -197,21 +203,60 @@ struct I2CMux
     }
 };
 
+
 struct Knob
 {
+    static constexpr int ANIM_SPEED = 56;
+
     static constexpr int deadzone = 4096 - 4096 * 5 / 6;
     static constexpr int half_deadzone = deadzone / 2;
-    int min_value = 0;
-    int max_value = 4095 - deadzone;
+    static constexpr int min_value = 0;
+    static constexpr int max_value = 4095 - deadzone;
     int raw_value; // 0..4095
     int deadzoned_value;
-    int id;
-    int changed;
-    int cc_value;
+    uint8_t id;
+    bool changed;
+    uint8_t cc_value;
 
-    Knob(int _id) : id(_id), changed(1), cc_value(0) {}
+    int prev_value;
+    int led_value;
 
-    int poll() {
+    uint8_t knob_change_hold;
+    uint8_t silence_hold;
+    bool animate_to_knob;
+
+    Knob(int _id)
+        : id(_id), changed(1), cc_value(0), prev_value(0), led_value(0)
+    {
+        knob_change_hold = 0;
+        silence_hold = 0;
+        animate_to_knob = true;
+    }
+
+    void init_sensor()
+    {
+        I2CMux::select(id);
+
+        rcc_periph_clock_enable(RCC_I2C1);
+        uint16_t conf = 0b11 << 2;  // HYST 11
+        conf |= 0b00 << 0;          // SF slow filter 16x
+        as5600.setConf(conf);
+        rcc_periph_clock_disable(RCC_I2C1);
+    }
+
+    void check_sensor()
+    {
+        I2CMux::select(id);
+
+        rcc_periph_clock_enable(RCC_I2C1);
+        xprintf("current conf=%04x strength=%d agc=%d a=%d\n", 
+                as5600.getConf(), as5600.getMagnetStrength(), as5600.getAgc(),
+                as5600.getScaledAngle());
+        rcc_periph_clock_disable(RCC_I2C1);
+    }
+
+    int poll()
+    {
         I2CMux::select(id);
 
         rcc_periph_clock_enable(RCC_I2C1);
@@ -222,21 +267,46 @@ struct Knob
         if (deadzoned_value < 0) deadzoned_value = 0;
         if (deadzoned_value > max_value) deadzoned_value = max_value;
         deadzoned_value = deadzoned_value * 1200 / 1000;
+      
+        deadzoned_value = (prev_value + deadzoned_value) / 2; // hopefully reduce the flicker a little bit
+        prev_value = deadzoned_value;
 
         int new_cc_value = deadzoned_value * 128 / 4096;
         if (new_cc_value != cc_value) {
             changed = 1;
+            knob_change_hold = KNOB_CHANGE_HOLD;
             cc_value = new_cc_value;
+            //led_value = deadzoned_value;
         }
 
+        if (animate_to_knob) {
+            if (led_value < deadzoned_value)
+                led_value += ANIM_SPEED;// = deadzoned_value;
+            else if (led_value > deadzoned_value)
+                led_value -= ANIM_SPEED;
+        }
+        else if (changed) {
+            led_value = deadzoned_value;
+        }
+        if (animate_to_knob && std::abs(led_value - deadzoned_value) < 2 * ANIM_SPEED) {
+            animate_to_knob = false;
+        }
+
+        if (knob_change_hold) --knob_change_hold;
+
         return raw_value;
+    }
+
+    void release_hold()
+    {
+        knob_change_hold = 0;
     }
 
     int16_t get_bitmap(int pwm_phase)
     {
 #if 1
         constexpr int mult = 1 << PWM_BITS;
-        int nbits = 1 + deadzoned_value * 15 * mult / 4096;
+        int nbits = 1 + led_value * 15 * mult / 4096;
         uint8_t frac = nbits & (mult - 1);
 
         frac = pwm_linearize[frac]>>1;
@@ -246,27 +316,74 @@ struct Knob
         int bm = (1 << num) - 1;
         return bm;
 #else
-        int nbits = 1 + deadzoned_value * 15 / 4096;
+        int nbits = 1 + led_value * 15 / 4096;
         return 1 << nbits;
 #endif
+    }
+
+    void set_peak(int value)
+    {
+        static constexpr int thresh = 3;
+
+        if (knob_change_hold) return;
+
+        if (value <= thresh) {
+            if (silence_hold < SILENCE_HOLD) {
+                ++silence_hold;
+                if (silence_hold == SILENCE_HOLD) {
+                    animate_to_knob = true;
+                }
+            }
+        }
+        else if (value > thresh) {
+            silence_hold = 0;
+        }
+
+        if (silence_hold == SILENCE_HOLD) {
+            return;
+        }
+
+        if (value < 0) value = 0;
+        if (value > 127) value = 127;
+        led_value = value * 4096 / 128;
+    }
+
+    void start_animate_to_knob()
+    {
+        silence_hold = SILENCE_HOLD;
+        led_value = 0;
+        animate_to_knob = true;
     }
 };
 
 struct Knobulator
 {
-    static constexpr int KNOB_POLL = 512;
+    static constexpr int KNOB_POLL = 512;   // why everything breaks when KNOB_POLL is around 1024 ?
+    static constexpr int PEAK_CTR = 5120; // too frequent light updates -> usb lockup
 
-    LedRefresh leds;
     Knob knobs[N_KNOBS] {Knob(0), Knob(1), Knob(2), Knob(3)};
+    uint8_t peaks[N_KNOBS] {};
+    LedRefresh leds;
 
     int knob_poll_ctr = 0;
     int rr_knob = 0;
     int rr_pwm = 0;
     int pwm_phase = 0;
+    int peak_ctr = 0;
+
+    Knobulator() 
+    {}
 
     void setup()
     {
         leds.init();
+        leds.off();
+
+        for (int i = 0; i < N_KNOBS; ++i) {
+            knobs[i].init_sensor();
+            knobs[i].poll();
+            knobs[i].start_animate_to_knob();
+        }
     }
 
     void loop()
@@ -286,7 +403,7 @@ struct Knobulator
         if (++knob_poll_ctr == KNOB_POLL) {
             knob_poll_ctr = 0;
 
-            leds.off();
+            //leds.off();
             knobs[rr_knob].poll();
 
             if (knobs[rr_knob].changed) {
@@ -296,11 +413,26 @@ struct Knobulator
 
             if (++rr_knob == N_KNOBS) rr_knob = 0;
         }
+        else if (++peak_ctr == PEAK_CTR) {
+            peak_ctr = 0;
+            for (int i = 0; i < N_KNOBS; ++i) {
+                knobs[i].set_peak(peaks[i]);
+            }
+            //knobs[3].check_sensor();
+        }
+    }
+
+    void set_peak(int chan, int value)
+    {
+        if (chan < 0 || chan >= N_KNOBS) return;
+        peaks[chan] = value;
+        knobs[chan].set_peak(value);
     }
 };
 
 Knobulator knobulator;
 
+#if WITH_OLED
 u8g2_t u8g2;
 //typedef uint8_t (*u8x8_msg_cb)(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr);
 //typedef uint16_t (*u8x8_char_cb)(u8x8_t *u8x8, uint8_t b);
@@ -319,9 +451,11 @@ static uint8_t u8x8_gpio_and_delay_cm3(u8x8_t *u8x8, uint8_t msg, uint8_t arg_in
 
     return 1;
 }
+#endif
 
 void oled_init()
 {
+#if WITH_OLED
 //void u8g2_Setup_sh1106_128x64_noname_f(u8g2_t *u8g2, const u8g2_cb_t *rotation, u8x8_msg_cb byte_cb, u8x8_msg_cb gpio_and_delay_cb);
     // rotation = U8G2_R2
     u8g2_Setup_sh1106_128x64_noname_f(&u8g2, U8G2_R2, 
@@ -332,27 +466,37 @@ void oled_init()
     u8g2_SetFont(&u8g2, u8x8_font_7x14B_1x2_f);
     u8g2_ClearDisplay(&u8g2);
     u8g2_DrawStr(&u8g2, 1,1, "PETOCONTROLE");
+#endif
+}
+
+void my_midi_peak_meter_cb(midi_chan_t midichan, uint8_t chan, uint8_t value)
+{
+    (void)midichan;
+    knobulator.set_peak(chan, value);
 }
 
 int main(void)
 {
+    // reacts to CC91..CC94 to update peaks
+    midi_peak_meter_cb = my_midi_peak_meter_cb;
+
     clock_setup();
-
     gpio_setup();
-
     usbcmp_setup();
-
-    knobulator.setup();
-
     wire_begin();
     rcc_periph_clock_disable(RCC_I2C1);
-
     I2CMux::init();
+    knobulator.setup();
 
     oled_init();
 
+    int skip_ctr = 0;
     while (1) {
-        usbcmp_poll();
+        // no idea, seems to make it a bit more stable
+        if (++skip_ctr == 32) {
+            usbcmp_poll();
+            skip_ctr = 0;
+        }
         knobulator.loop();
     }
 

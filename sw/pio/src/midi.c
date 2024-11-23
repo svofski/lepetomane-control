@@ -56,6 +56,7 @@ midi_chan_cb_t       midi_all_notes_off_cb;
 midi_chan_cb_t       midi_reset_all_cntrls_cb;
 midi_pitchbend_cb_t  midi_pitchbend_cb;
 midi_progchange_cb_t midi_program_change_cb;
+midi_peak_meter_cb_t midi_peak_meter_cb;
 
 static
 void midi_note_on(midi_chan_t chan, uint8_t note, uint8_t velocity);
@@ -152,6 +153,16 @@ void midi_control_change(midi_chan_t chan, uint8_t control, uint8_t value)
         case 127:   ccname = "Poly On (Mono Off)"; 
                     if (midi_all_notes_off_cb) midi_all_notes_off_cb(chan);
                     break;
+        case 91:
+        case 92:
+        case 93:
+        case 94:    ccname = "Ring Light Peak meter";
+                    //xprintf("peak: chan %d cc %d = %d %x\n", chan, control, value, midi_peak_meter_cb);
+                    if (midi_peak_meter_cb) midi_peak_meter_cb(chan, control - 91, value);
+                    break;
+        default:    xprintf("chan %d cc %d = %d\n", chan, control, value);
+                    break;
+
     }
 
     if (ccname) {

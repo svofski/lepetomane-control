@@ -42,7 +42,7 @@
 //#include "wirish.h"
 
 void WireBase::begin(uint8 self_addr) {
-	(void)self_addr;
+    (void)self_addr;
     tx_buf_idx = 0;
     tx_buf_overflow = false;
     rx_buf_idx = 0;
@@ -103,17 +103,17 @@ size_t WireBase::write(uint8 value) {
     }
     tx_buf[tx_buf_idx++] = value;
     itc_msg.length++;
-	return 1;
+    return 1;
 }
 
 size_t WireBase::write(uint8* buf, int len) {
     for (uint8 i = 0; i < len; i++) {
         if (!write(buf[i]))
-		{
-			return i;
-		}
+        {
+            return i;
+        }
     }
-	return len;
+    return len;
 }
 
 
