@@ -1,3 +1,9 @@
+// libopencm3 based bit-banged SPI
+//
+// very basic, transmit-only. add features to taste.
+//
+// svofski 2024
+
 #pragma once
 
 #include <cstdint>
@@ -7,17 +13,8 @@
 // lsb first, polarity = 0, phase = 0 -- rx not implemented
 class SW_SPI
 {
-    static constexpr unsigned pace_const = 5;
-
 private:
     int port, clk, miso, mosi;
-
-    void pace(unsigned n = pace_const)
-    {
-        for (unsigned i = 0; i < n; ++i) {
-            __asm__("nop");
-        }
-    }
 
 public:
     SW_SPI(int gpio_port, int gpio_clk, int gpio_miso, int gpio_mosi)
@@ -57,7 +54,6 @@ public:
             __asm__("nop");
             __asm__("nop");
             gpio_clear(port, clk);
-            //pace(1);
 
             byte >>= 1;
         }

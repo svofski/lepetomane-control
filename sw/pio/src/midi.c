@@ -1,3 +1,10 @@
+// Petocontrole MIDI interface
+//
+// svofski 2024
+//
+
+#include "params.h"
+
 #include <inttypes.h>
 #include <stdio.h>
 
@@ -153,10 +160,11 @@ void midi_control_change(midi_chan_t chan, uint8_t control, uint8_t value)
         case 127:   ccname = "Poly On (Mono Off)"; 
                     if (midi_all_notes_off_cb) midi_all_notes_off_cb(chan);
                     break;
-        case 91:
-        case 92:
-        case 93:
-        case 94:    ccname = "Ring Light Peak meter";
+        case MIDI_RINGLIGHT1:
+        case MIDI_RINGLIGHT2:
+        case MIDI_RINGLIGHT3:
+        case MIDI_RINGLIGHT4:
+                    ccname = "Ring Light Peak meter";
                     //xprintf("peak: chan %d cc %d = %d %x\n", chan, control, value, midi_peak_meter_cb);
                     if (midi_peak_meter_cb) midi_peak_meter_cb(chan, control - 91, value);
                     break;

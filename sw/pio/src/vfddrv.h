@@ -1,3 +1,10 @@
+// FUTABA 8MD-06INKM VFD display driver
+//
+// based on MicroPython code by Reboot93
+// https://github.com/Reboot93/MicroPython-8MD-06INKM-display-driver
+//
+// svofski 2024
+//
 #pragma once
 
 #include <cstdint>
@@ -129,8 +136,4 @@ private:
         }
         set_cs(1);
     }
-
-
-
-
 };
