@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mechanical:MountingHole H1
+L lepetocontrol-rescue:MountingHole-mechanical H1
 U 1 1 619D194B
 P 4100 1000
 F 0 "H1" H 4200 1046 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "~" H 4100 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H2
+L lepetocontrol-rescue:MountingHole-mechanical H2
 U 1 1 619D1F12
 P 4850 1000
 F 0 "H2" H 4950 1046 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 4850 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H3
+L lepetocontrol-rescue:MountingHole-mechanical H3
 U 1 1 619D22BC
 P 5800 1000
 F 0 "H3" H 5900 1046 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "~" H 5800 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H4
+L lepetocontrol-rescue:MountingHole-mechanical H4
 U 1 1 619D2436
 P 6700 1000
 F 0 "H4" H 6800 1046 50  0000 L CNN
@@ -58,7 +58,7 @@ F 3 "~" H 6700 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D1
+L lepetocontrol-rescue:LED-device D1
 U 1 1 619D2C76
 P 2800 3100
 F 0 "D1" H 2800 3000 50  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "~" H 2800 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D2
+L lepetocontrol-rescue:LED-device D2
 U 1 1 619D3BA9
 P 2800 3300
 F 0 "D2" H 2800 3200 50  0000 C CNN
@@ -80,7 +80,7 @@ F 3 "~" H 2800 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D3
+L lepetocontrol-rescue:LED-device D3
 U 1 1 619D3EE2
 P 2800 3500
 F 0 "D3" H 2800 3400 50  0000 C CNN
@@ -91,7 +91,7 @@ F 3 "~" H 2800 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D4
+L lepetocontrol-rescue:LED-device D4
 U 1 1 619D3FD1
 P 2800 3700
 F 0 "D4" H 2800 3600 50  0000 C CNN
@@ -102,7 +102,7 @@ F 3 "~" H 2800 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D5
+L lepetocontrol-rescue:LED-device D5
 U 1 1 619D40A3
 P 2800 3900
 F 0 "D5" H 2800 3800 50  0000 C CNN
@@ -113,7 +113,7 @@ F 3 "~" H 2800 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D6
+L lepetocontrol-rescue:LED-device D6
 U 1 1 619D4175
 P 2800 4100
 F 0 "D6" H 2800 4000 50  0000 C CNN
@@ -124,7 +124,7 @@ F 3 "~" H 2800 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D7
+L lepetocontrol-rescue:LED-device D7
 U 1 1 619D4D65
 P 2800 4300
 F 0 "D7" H 2800 4200 50  0000 C CNN
@@ -135,7 +135,7 @@ F 3 "~" H 2800 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D8
+L lepetocontrol-rescue:LED-device D8
 U 1 1 619D4E37
 P 2800 4500
 F 0 "D8" H 2800 4400 50  0000 C CNN
@@ -146,7 +146,7 @@ F 3 "~" H 2800 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D9
+L lepetocontrol-rescue:LED-device D9
 U 1 1 619D4F09
 P 3950 3100
 F 0 "D9" H 3950 3000 50  0000 C CNN
@@ -157,7 +157,7 @@ F 3 "~" H 3950 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D10
+L lepetocontrol-rescue:LED-device D10
 U 1 1 619D4FDB
 P 3950 3300
 F 0 "D10" H 3950 3200 50  0000 C CNN
@@ -168,7 +168,7 @@ F 3 "~" H 3950 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D11
+L lepetocontrol-rescue:LED-device D11
 U 1 1 619D50AD
 P 3950 3500
 F 0 "D11" H 3950 3400 50  0000 C CNN
@@ -179,7 +179,7 @@ F 3 "~" H 3950 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D12
+L lepetocontrol-rescue:LED-device D12
 U 1 1 619D517F
 P 3950 3700
 F 0 "D12" H 3950 3600 50  0000 C CNN
@@ -190,7 +190,7 @@ F 3 "~" H 3950 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D13
+L lepetocontrol-rescue:LED-device D13
 U 1 1 619D5251
 P 3950 3900
 F 0 "D13" H 3950 3800 50  0000 C CNN
@@ -201,7 +201,7 @@ F 3 "~" H 3950 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D14
+L lepetocontrol-rescue:LED-device D14
 U 1 1 619D5323
 P 3950 4100
 F 0 "D14" H 3950 4000 50  0000 C CNN
@@ -212,7 +212,7 @@ F 3 "~" H 3950 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D15
+L lepetocontrol-rescue:LED-device D15
 U 1 1 619D5439
 P 3950 4300
 F 0 "D15" H 3950 4200 50  0000 C CNN
@@ -223,7 +223,7 @@ F 3 "~" H 3950 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74HC595 U1
+L lepetocontrol-rescue:74HC595-74xx U1
 U 1 1 619E48A7
 P 1700 6050
 F 0 "U1" H 1950 6700 50  0000 C CNN
@@ -234,7 +234,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1700 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D17
+L lepetocontrol-rescue:LED-device D17
 U 1 1 619FCDA3
 P 5200 3100
 F 0 "D17" H 5200 3000 50  0000 C CNN
@@ -245,7 +245,7 @@ F 3 "~" H 5200 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D18
+L lepetocontrol-rescue:LED-device D18
 U 1 1 619FCDA9
 P 5200 3300
 F 0 "D18" H 5200 3200 50  0000 C CNN
@@ -256,7 +256,7 @@ F 3 "~" H 5200 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D19
+L lepetocontrol-rescue:LED-device D19
 U 1 1 619FCDAF
 P 5200 3500
 F 0 "D19" H 5200 3400 50  0000 C CNN
@@ -267,7 +267,7 @@ F 3 "~" H 5200 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D20
+L lepetocontrol-rescue:LED-device D20
 U 1 1 619FCDB5
 P 5200 3700
 F 0 "D20" H 5200 3600 50  0000 C CNN
@@ -278,7 +278,7 @@ F 3 "~" H 5200 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D21
+L lepetocontrol-rescue:LED-device D21
 U 1 1 619FCDBB
 P 5200 3900
 F 0 "D21" H 5200 3800 50  0000 C CNN
@@ -289,7 +289,7 @@ F 3 "~" H 5200 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D22
+L lepetocontrol-rescue:LED-device D22
 U 1 1 619FCDC1
 P 5200 4100
 F 0 "D22" H 5200 4000 50  0000 C CNN
@@ -300,7 +300,7 @@ F 3 "~" H 5200 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D23
+L lepetocontrol-rescue:LED-device D23
 U 1 1 619FCDC7
 P 5200 4300
 F 0 "D23" H 5200 4200 50  0000 C CNN
@@ -311,7 +311,7 @@ F 3 "~" H 5200 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D24
+L lepetocontrol-rescue:LED-device D24
 U 1 1 619FCDCD
 P 5200 4500
 F 0 "D24" H 5200 4400 50  0000 C CNN
@@ -322,7 +322,7 @@ F 3 "~" H 5200 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D25
+L lepetocontrol-rescue:LED-device D25
 U 1 1 619FCDD3
 P 6350 3100
 F 0 "D25" H 6350 3000 50  0000 C CNN
@@ -333,7 +333,7 @@ F 3 "~" H 6350 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D26
+L lepetocontrol-rescue:LED-device D26
 U 1 1 619FCDD9
 P 6350 3300
 F 0 "D26" H 6350 3200 50  0000 C CNN
@@ -344,7 +344,7 @@ F 3 "~" H 6350 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D27
+L lepetocontrol-rescue:LED-device D27
 U 1 1 619FCDDF
 P 6350 3500
 F 0 "D27" H 6350 3400 50  0000 C CNN
@@ -355,7 +355,7 @@ F 3 "~" H 6350 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D28
+L lepetocontrol-rescue:LED-device D28
 U 1 1 619FCDE5
 P 6350 3700
 F 0 "D28" H 6350 3600 50  0000 C CNN
@@ -366,7 +366,7 @@ F 3 "~" H 6350 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D29
+L lepetocontrol-rescue:LED-device D29
 U 1 1 619FCDEB
 P 6350 3900
 F 0 "D29" H 6350 3800 50  0000 C CNN
@@ -377,7 +377,7 @@ F 3 "~" H 6350 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D30
+L lepetocontrol-rescue:LED-device D30
 U 1 1 619FCDF1
 P 6350 4100
 F 0 "D30" H 6350 4000 50  0000 C CNN
@@ -388,7 +388,7 @@ F 3 "~" H 6350 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D31
+L lepetocontrol-rescue:LED-device D31
 U 1 1 619FCDF7
 P 6350 4300
 F 0 "D31" H 6350 4200 50  0000 C CNN
@@ -399,7 +399,7 @@ F 3 "~" H 6350 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D33
+L lepetocontrol-rescue:LED-device D33
 U 1 1 61A01D85
 P 7650 3100
 F 0 "D33" H 7650 3000 50  0000 C CNN
@@ -410,7 +410,7 @@ F 3 "~" H 7650 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D34
+L lepetocontrol-rescue:LED-device D34
 U 1 1 61A01D8B
 P 7650 3300
 F 0 "D34" H 7650 3200 50  0000 C CNN
@@ -421,7 +421,7 @@ F 3 "~" H 7650 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D35
+L lepetocontrol-rescue:LED-device D35
 U 1 1 61A01D91
 P 7650 3500
 F 0 "D35" H 7650 3400 50  0000 C CNN
@@ -432,7 +432,7 @@ F 3 "~" H 7650 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D36
+L lepetocontrol-rescue:LED-device D36
 U 1 1 61A01D97
 P 7650 3700
 F 0 "D36" H 7650 3600 50  0000 C CNN
@@ -443,7 +443,7 @@ F 3 "~" H 7650 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D37
+L lepetocontrol-rescue:LED-device D37
 U 1 1 61A01D9D
 P 7650 3900
 F 0 "D37" H 7650 3800 50  0000 C CNN
@@ -454,7 +454,7 @@ F 3 "~" H 7650 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D38
+L lepetocontrol-rescue:LED-device D38
 U 1 1 61A01DA3
 P 7650 4100
 F 0 "D38" H 7650 4000 50  0000 C CNN
@@ -465,7 +465,7 @@ F 3 "~" H 7650 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D39
+L lepetocontrol-rescue:LED-device D39
 U 1 1 61A01DA9
 P 7650 4300
 F 0 "D39" H 7650 4200 50  0000 C CNN
@@ -476,7 +476,7 @@ F 3 "~" H 7650 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D40
+L lepetocontrol-rescue:LED-device D40
 U 1 1 61A01DAF
 P 7650 4500
 F 0 "D40" H 7650 4400 50  0000 C CNN
@@ -487,7 +487,7 @@ F 3 "~" H 7650 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D41
+L lepetocontrol-rescue:LED-device D41
 U 1 1 61A01DB5
 P 9000 3100
 F 0 "D41" H 9000 3000 50  0000 C CNN
@@ -498,7 +498,7 @@ F 3 "~" H 9000 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D42
+L lepetocontrol-rescue:LED-device D42
 U 1 1 61A01DBB
 P 9000 3300
 F 0 "D42" H 9000 3200 50  0000 C CNN
@@ -509,7 +509,7 @@ F 3 "~" H 9000 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D43
+L lepetocontrol-rescue:LED-device D43
 U 1 1 61A01DC1
 P 9000 3500
 F 0 "D43" H 9000 3400 50  0000 C CNN
@@ -520,7 +520,7 @@ F 3 "~" H 9000 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D44
+L lepetocontrol-rescue:LED-device D44
 U 1 1 61A01DC7
 P 9000 3700
 F 0 "D44" H 9000 3600 50  0000 C CNN
@@ -531,7 +531,7 @@ F 3 "~" H 9000 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D45
+L lepetocontrol-rescue:LED-device D45
 U 1 1 61A01DCD
 P 9000 3900
 F 0 "D45" H 9000 3800 50  0000 C CNN
@@ -542,7 +542,7 @@ F 3 "~" H 9000 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D46
+L lepetocontrol-rescue:LED-device D46
 U 1 1 61A01DD3
 P 9000 4100
 F 0 "D46" H 9000 4000 50  0000 C CNN
@@ -553,7 +553,7 @@ F 3 "~" H 9000 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D47
+L lepetocontrol-rescue:LED-device D47
 U 1 1 61A01DD9
 P 9000 4300
 F 0 "D47" H 9000 4200 50  0000 C CNN
@@ -564,7 +564,7 @@ F 3 "~" H 9000 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D49
+L lepetocontrol-rescue:LED-device D49
 U 1 1 61A068A1
 P 10350 3100
 F 0 "D49" H 10350 3000 50  0000 C CNN
@@ -575,7 +575,7 @@ F 3 "~" H 10350 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D50
+L lepetocontrol-rescue:LED-device D50
 U 1 1 61A068A7
 P 10350 3300
 F 0 "D50" H 10350 3200 50  0000 C CNN
@@ -586,7 +586,7 @@ F 3 "~" H 10350 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D51
+L lepetocontrol-rescue:LED-device D51
 U 1 1 61A068AD
 P 10350 3500
 F 0 "D51" H 10350 3400 50  0000 C CNN
@@ -597,7 +597,7 @@ F 3 "~" H 10350 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D52
+L lepetocontrol-rescue:LED-device D52
 U 1 1 61A068B3
 P 10350 3700
 F 0 "D52" H 10350 3600 50  0000 C CNN
@@ -608,7 +608,7 @@ F 3 "~" H 10350 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D53
+L lepetocontrol-rescue:LED-device D53
 U 1 1 61A068B9
 P 10350 3900
 F 0 "D53" H 10350 3800 50  0000 C CNN
@@ -619,7 +619,7 @@ F 3 "~" H 10350 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D54
+L lepetocontrol-rescue:LED-device D54
 U 1 1 61A068BF
 P 10350 4100
 F 0 "D54" H 10350 4000 50  0000 C CNN
@@ -630,7 +630,7 @@ F 3 "~" H 10350 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D55
+L lepetocontrol-rescue:LED-device D55
 U 1 1 61A068C5
 P 10350 4300
 F 0 "D55" H 10350 4200 50  0000 C CNN
@@ -641,7 +641,7 @@ F 3 "~" H 10350 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D56
+L lepetocontrol-rescue:LED-device D56
 U 1 1 61A068CB
 P 10350 4500
 F 0 "D56" H 10350 4400 50  0000 C CNN
@@ -652,7 +652,7 @@ F 3 "~" H 10350 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D57
+L lepetocontrol-rescue:LED-device D57
 U 1 1 61A068D1
 P 11600 3100
 F 0 "D57" H 11600 3000 50  0000 C CNN
@@ -663,7 +663,7 @@ F 3 "~" H 11600 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D58
+L lepetocontrol-rescue:LED-device D58
 U 1 1 61A068D7
 P 11600 3300
 F 0 "D58" H 11600 3200 50  0000 C CNN
@@ -674,7 +674,7 @@ F 3 "~" H 11600 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D59
+L lepetocontrol-rescue:LED-device D59
 U 1 1 61A068DD
 P 11600 3500
 F 0 "D59" H 11600 3400 50  0000 C CNN
@@ -685,7 +685,7 @@ F 3 "~" H 11600 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D60
+L lepetocontrol-rescue:LED-device D60
 U 1 1 61A068E3
 P 11600 3700
 F 0 "D60" H 11600 3600 50  0000 C CNN
@@ -696,7 +696,7 @@ F 3 "~" H 11600 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D61
+L lepetocontrol-rescue:LED-device D61
 U 1 1 61A068E9
 P 11600 3900
 F 0 "D61" H 11600 3800 50  0000 C CNN
@@ -707,7 +707,7 @@ F 3 "~" H 11600 3900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D62
+L lepetocontrol-rescue:LED-device D62
 U 1 1 61A068EF
 P 11600 4100
 F 0 "D62" H 11600 4000 50  0000 C CNN
@@ -718,7 +718,7 @@ F 3 "~" H 11600 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:LED D63
+L lepetocontrol-rescue:LED-device D63
 U 1 1 61A068F5
 P 11600 4300
 F 0 "D63" H 11600 4200 50  0000 C CNN
@@ -884,7 +884,7 @@ Wire Wire Line
 	2950 4500 2950 4950
 Connection ~ 2950 4500
 $Comp
-L transistors:BC817 Q1
+L lepetocontrol-rescue:BC817-transistors Q1
 U 1 1 61A77D83
 P 2850 5150
 F 0 "Q1" H 3041 5196 50  0000 L CNN
@@ -895,7 +895,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2850 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q2
+L lepetocontrol-rescue:BC817-transistors Q2
 U 1 1 61A78B8D
 P 4000 5150
 F 0 "Q2" H 4191 5196 50  0000 L CNN
@@ -906,7 +906,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 4000 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q3
+L lepetocontrol-rescue:BC817-transistors Q3
 U 1 1 61A79A96
 P 5250 5150
 F 0 "Q3" H 5441 5196 50  0000 L CNN
@@ -917,7 +917,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5250 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q4
+L lepetocontrol-rescue:BC817-transistors Q4
 U 1 1 61A7A04A
 P 6400 5150
 F 0 "Q4" H 6591 5196 50  0000 L CNN
@@ -928,7 +928,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6400 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q5
+L lepetocontrol-rescue:BC817-transistors Q5
 U 1 1 61A7A640
 P 7700 5150
 F 0 "Q5" H 7891 5196 50  0000 L CNN
@@ -939,7 +939,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 7700 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q6
+L lepetocontrol-rescue:BC817-transistors Q6
 U 1 1 61A7AF48
 P 9050 5150
 F 0 "Q6" H 9241 5196 50  0000 L CNN
@@ -950,7 +950,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9050 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q7
+L lepetocontrol-rescue:BC817-transistors Q7
 U 1 1 61A7B3BB
 P 10400 5150
 F 0 "Q7" H 10591 5196 50  0000 L CNN
@@ -961,7 +961,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 10400 5150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L transistors:BC817 Q8
+L lepetocontrol-rescue:BC817-transistors Q8
 U 1 1 61A7B9E6
 P 11650 5150
 F 0 "Q8" H 11841 5196 50  0000 L CNN
@@ -978,7 +978,7 @@ Wire Wire Line
 	7800 4500 7800 4950
 Connection ~ 7800 4500
 $Comp
-L power:GND #PWR0101
+L lepetocontrol-rescue:GND-power #PWR0101
 U 1 1 61A85677
 P 2950 5350
 F 0 "#PWR0101" H 2950 5100 50  0001 C CNN
@@ -989,7 +989,7 @@ F 3 "" H 2950 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L lepetocontrol-rescue:GND-power #PWR0102
 U 1 1 61A8673B
 P 4100 5350
 F 0 "#PWR0102" H 4100 5100 50  0001 C CNN
@@ -1000,7 +1000,7 @@ F 3 "" H 4100 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L lepetocontrol-rescue:GND-power #PWR0103
 U 1 1 61A86B46
 P 5350 5350
 F 0 "#PWR0103" H 5350 5100 50  0001 C CNN
@@ -1011,7 +1011,7 @@ F 3 "" H 5350 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L lepetocontrol-rescue:GND-power #PWR0104
 U 1 1 61A870D3
 P 6500 5350
 F 0 "#PWR0104" H 6500 5100 50  0001 C CNN
@@ -1022,7 +1022,7 @@ F 3 "" H 6500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L lepetocontrol-rescue:GND-power #PWR0105
 U 1 1 61A87477
 P 7800 5350
 F 0 "#PWR0105" H 7800 5100 50  0001 C CNN
@@ -1033,7 +1033,7 @@ F 3 "" H 7800 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L lepetocontrol-rescue:GND-power #PWR0106
 U 1 1 61A87A55
 P 9150 5350
 F 0 "#PWR0106" H 9150 5100 50  0001 C CNN
@@ -1044,7 +1044,7 @@ F 3 "" H 9150 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
+L lepetocontrol-rescue:GND-power #PWR0107
 U 1 1 61A87DEE
 P 10500 5350
 F 0 "#PWR0107" H 10500 5100 50  0001 C CNN
@@ -1055,7 +1055,7 @@ F 3 "" H 10500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L lepetocontrol-rescue:GND-power #PWR0108
 U 1 1 61A883CA
 P 11750 5350
 F 0 "#PWR0108" H 11750 5100 50  0001 C CNN
@@ -1069,7 +1069,7 @@ Wire Wire Line
 	10500 4500 10500 4950
 Connection ~ 10500 4500
 $Comp
-L device:R R1
+L lepetocontrol-rescue:R-device R1
 U 1 1 61A8D4EC
 P 2500 5150
 F 0 "R1" V 2293 5150 50  0000 C CNN
@@ -1128,7 +1128,7 @@ Wire Wire Line
 Wire Wire Line
 	11100 6350 2100 6350
 $Comp
-L 74xx:74HC595 U2
+L lepetocontrol-rescue:74HC595-74xx U2
 U 1 1 61AD6E5C
 P 1600 2450
 F 0 "U2" H 1850 3100 50  0000 C CNN
@@ -1539,7 +1539,7 @@ Wire Wire Line
 	11100 4500 11450 4500
 Connection ~ 9850 2750
 $Comp
-L device:R R2
+L lepetocontrol-rescue:R-device R2
 U 1 1 61D74397
 P 3650 5150
 F 0 "R2" V 3443 5150 50  0000 C CNN
@@ -1550,7 +1550,7 @@ F 3 "~" H 3650 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R3
+L lepetocontrol-rescue:R-device R3
 U 1 1 61D747A9
 P 4900 5150
 F 0 "R3" V 4693 5150 50  0000 C CNN
@@ -1561,7 +1561,7 @@ F 3 "~" H 4900 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R4
+L lepetocontrol-rescue:R-device R4
 U 1 1 61D74ABB
 P 6050 5150
 F 0 "R4" V 5843 5150 50  0000 C CNN
@@ -1572,7 +1572,7 @@ F 3 "~" H 6050 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R5
+L lepetocontrol-rescue:R-device R5
 U 1 1 61D74D02
 P 7350 5150
 F 0 "R5" V 7143 5150 50  0000 C CNN
@@ -1583,7 +1583,7 @@ F 3 "~" H 7350 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R6
+L lepetocontrol-rescue:R-device R6
 U 1 1 61D74FF1
 P 8700 5150
 F 0 "R6" V 8493 5150 50  0000 C CNN
@@ -1594,7 +1594,7 @@ F 3 "~" H 8700 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R7
+L lepetocontrol-rescue:R-device R7
 U 1 1 61D75380
 P 10050 5150
 F 0 "R7" V 9843 5150 50  0000 C CNN
@@ -1605,7 +1605,7 @@ F 3 "~" H 10050 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R8
+L lepetocontrol-rescue:R-device R8
 U 1 1 61D759C9
 P 11300 5150
 F 0 "R8" V 11093 5150 50  0000 C CNN
@@ -1625,7 +1625,7 @@ Connection ~ 1000 2250
 Wire Wire Line
 	1000 2250 750  2250
 $Comp
-L power:GND #PWR0109
+L lepetocontrol-rescue:GND-power #PWR0109
 U 1 1 61977092
 P 1250 2700
 F 0 "#PWR0109" H 1250 2450 50  0001 C CNN
@@ -1644,7 +1644,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 6250 1250 6300
 $Comp
-L power:GND #PWR0110
+L lepetocontrol-rescue:GND-power #PWR0110
 U 1 1 6199FDE8
 P 1250 6300
 F 0 "#PWR0110" H 1250 6050 50  0001 C CNN
@@ -1655,7 +1655,7 @@ F 3 "" H 1250 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L lepetocontrol-rescue:GND-power #PWR0111
 U 1 1 619A0175
 P 1700 6750
 F 0 "#PWR0111" H 1700 6500 50  0001 C CNN
@@ -1666,7 +1666,7 @@ F 3 "" H 1700 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L lepetocontrol-rescue:GND-power #PWR0112
 U 1 1 619A04AE
 P 1600 3150
 F 0 "#PWR0112" H 1600 2900 50  0001 C CNN
@@ -1686,7 +1686,7 @@ Wire Wire Line
 	1150 2550 750  2550
 Connection ~ 1150 2550
 $Comp
-L power:VCC #PWR0113
+L lepetocontrol-rescue:VCC-power #PWR0113
 U 1 1 61A0EA1B
 P 1200 2350
 F 0 "#PWR0113" H 1200 2200 50  0001 C CNN
@@ -1697,7 +1697,7 @@ F 3 "" H 1200 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR0114
+L lepetocontrol-rescue:VCC-power #PWR0114
 U 1 1 61A0F81E
 P 1300 5950
 F 0 "#PWR0114" H 1300 5800 50  0001 C CNN
@@ -1710,7 +1710,7 @@ $EndComp
 Wire Wire Line
 	1300 5650 900  5650
 $Comp
-L power:VCC #PWR0115
+L lepetocontrol-rescue:VCC-power #PWR0115
 U 1 1 61A27EA4
 P 1600 1850
 F 0 "#PWR0115" H 1600 1700 50  0001 C CNN
@@ -1721,7 +1721,7 @@ F 3 "" H 1600 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0116
+L lepetocontrol-rescue:VCC-power #PWR0116
 U 1 1 61A28548
 P 1700 5450
 F 0 "#PWR0116" H 1700 5300 50  0001 C CNN
@@ -1732,7 +1732,7 @@ F 3 "" H 1700 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R16
+L lepetocontrol-rescue:R-device R16
 U 1 1 61AB361A
 P 2150 2750
 F 0 "R16" V 1943 2750 50  0000 C CNN
@@ -1744,7 +1744,7 @@ F 3 "~" H 2150 2750 50  0001 C CNN
 $EndComp
 Connection ~ 2300 2750
 $Comp
-L device:R R15
+L lepetocontrol-rescue:R-device R15
 U 1 1 61AC99D3
 P 2150 2650
 F 0 "R15" V 1943 2650 50  0000 C CNN
@@ -1755,7 +1755,7 @@ F 3 "~" H 2150 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R14
+L lepetocontrol-rescue:R-device R14
 U 1 1 61AC9C25
 P 2150 2550
 F 0 "R14" V 1943 2550 50  0000 C CNN
@@ -1766,7 +1766,7 @@ F 3 "~" H 2150 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R13
+L lepetocontrol-rescue:R-device R13
 U 1 1 61AC9D57
 P 2150 2450
 F 0 "R13" V 1943 2450 50  0000 C CNN
@@ -1777,7 +1777,7 @@ F 3 "~" H 2150 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R12
+L lepetocontrol-rescue:R-device R12
 U 1 1 61AC9F26
 P 2150 2350
 F 0 "R12" V 1943 2350 50  0000 C CNN
@@ -1788,7 +1788,7 @@ F 3 "~" H 2150 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R11
+L lepetocontrol-rescue:R-device R11
 U 1 1 61ACA0AB
 P 2150 2250
 F 0 "R11" V 1943 2250 50  0000 C CNN
@@ -1799,7 +1799,7 @@ F 3 "~" H 2150 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R10
+L lepetocontrol-rescue:R-device R10
 U 1 1 61ACA206
 P 2150 2150
 F 0 "R10" V 1943 2150 50  0000 C CNN
@@ -1810,7 +1810,7 @@ F 3 "~" H 2150 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R9
+L lepetocontrol-rescue:R-device R9
 U 1 1 61ACA3A5
 P 2150 2050
 F 0 "R9" V 1943 2050 50  0000 C CNN
@@ -1858,7 +1858,7 @@ Wire Wire Line
 Wire Wire Line
 	11750 4300 11750 4950
 $Comp
-L conn:Conn_01x05_Female J1
+L lepetocontrol-rescue:Conn_01x05_Female-conn J1
 U 1 1 61C55A91
 P 14500 1400
 F 0 "J1" H 14528 1426 50  0000 L CNN
@@ -1869,7 +1869,7 @@ F 3 "~" H 14500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x05_Female J2
+L lepetocontrol-rescue:Conn_01x05_Female-conn J2
 U 1 1 61C56BB7
 P 14500 2150
 F 0 "J2" H 14528 2176 50  0000 L CNN
@@ -1886,7 +1886,7 @@ CLK
 Text Label 750  2550 0    50   ~ 0
 LATCH
 $Comp
-L power:GND #PWR0117
+L lepetocontrol-rescue:GND-power #PWR0117
 U 1 1 61CC941C
 P 14300 1950
 F 0 "#PWR0117" H 14300 1700 50  0001 C CNN
@@ -1897,7 +1897,7 @@ F 3 "" H 14300 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0118
+L lepetocontrol-rescue:VCC-power #PWR0118
 U 1 1 61CCA1A6
 P 14000 1950
 F 0 "#PWR0118" H 14000 1800 50  0001 C CNN

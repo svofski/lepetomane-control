@@ -27,7 +27,7 @@ F 3 "" H 2950 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stm32:STM32F103C4Tx U4
+L lepetocontrol-rescue:STM32F103C4Tx-stm32 U4
 U 1 1 61D96EF0
 P 5050 3350
 F 0 "U4" H 5400 5300 50  0000 C CNN
@@ -38,7 +38,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L lepetocontrol-rescue:GND-power #PWR021
 U 1 1 61D9C2E6
 P 2950 8200
 F 0 "#PWR021" H 2950 7950 50  0001 C CNN
@@ -49,7 +49,7 @@ F 3 "" H 2950 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C9
+L lepetocontrol-rescue:C_Small-device C9
 U 1 1 61DA6E0F
 P 3300 6850
 F 0 "C9" H 3392 6896 50  0000 L CNN
@@ -64,7 +64,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 6750 3300 6750
 $Comp
-L power:GND #PWR023
+L lepetocontrol-rescue:GND-power #PWR023
 U 1 1 61DA7862
 P 3300 6950
 F 0 "#PWR023" H 3300 6700 50  0001 C CNN
@@ -80,7 +80,7 @@ Wire Wire Line
 	2850 6750 3050 6750
 Connection ~ 3050 6750
 $Comp
-L power:GND #PWR017
+L lepetocontrol-rescue:GND-power #PWR017
 U 1 1 61DAABF2
 P 2400 7400
 F 0 "#PWR017" H 2400 7150 50  0001 C CNN
@@ -91,7 +91,7 @@ F 3 "" H 2400 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R22
+L lepetocontrol-rescue:R-device R22
 U 1 1 61DAB5EA
 P 1900 6500
 F 0 "R22" H 1970 6546 50  0000 L CNN
@@ -102,7 +102,7 @@ F 3 "~" H 1900 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R20
+L lepetocontrol-rescue:R-device R20
 U 1 1 61DABD82
 P 1750 6650
 F 0 "R20" H 1681 6604 50  0000 R CNN
@@ -115,7 +115,7 @@ $EndComp
 Wire Wire Line
 	1750 6500 1750 6300
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DAF613
 P 2850 6700
 AR Path="/61DAF613" Ref="#PWR?"  Part="1" 
@@ -131,7 +131,7 @@ Wire Wire Line
 	2850 6700 2850 6750
 Connection ~ 2850 6750
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DAF83F
 P 1900 6050
 AR Path="/61DAF83F" Ref="#PWR?"  Part="1" 
@@ -169,7 +169,7 @@ F 3 "" H 5400 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
+L lepetocontrol-rescue:GND-power #PWR029
 U 1 1 61DB6D4A
 P 5400 8200
 F 0 "#PWR029" H 5400 7950 50  0001 C CNN
@@ -180,7 +180,7 @@ F 3 "" H 5400 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C11
+L lepetocontrol-rescue:C_Small-device C11
 U 1 1 61DB6D50
 P 5750 6850
 F 0 "C11" H 5842 6896 50  0000 L CNN
@@ -195,7 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 6750 5750 6750
 $Comp
-L power:GND #PWR031
+L lepetocontrol-rescue:GND-power #PWR031
 U 1 1 61DB6D58
 P 5750 6950
 F 0 "#PWR031" H 5750 6700 50  0001 C CNN
@@ -211,7 +211,7 @@ Wire Wire Line
 	5300 6750 5500 6750
 Connection ~ 5500 6750
 $Comp
-L power:GND #PWR025
+L lepetocontrol-rescue:GND-power #PWR025
 U 1 1 61DB6D61
 P 4850 7400
 F 0 "#PWR025" H 4850 7150 50  0001 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 4850 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DB6D78
 P 5300 6700
 AR Path="/61DB6D78" Ref="#PWR?"  Part="1" 
@@ -258,7 +258,7 @@ F 3 "" H 7800 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR037
+L lepetocontrol-rescue:GND-power #PWR037
 U 1 1 61DB9A52
 P 7800 8200
 F 0 "#PWR037" H 7800 7950 50  0001 C CNN
@@ -269,7 +269,7 @@ F 3 "" H 7800 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C13
+L lepetocontrol-rescue:C_Small-device C13
 U 1 1 61DB9A58
 P 8150 6850
 F 0 "C13" H 8242 6896 50  0000 L CNN
@@ -284,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 6750 8150 6750
 $Comp
-L power:GND #PWR039
+L lepetocontrol-rescue:GND-power #PWR039
 U 1 1 61DB9A60
 P 8150 6950
 F 0 "#PWR039" H 8150 6700 50  0001 C CNN
@@ -300,7 +300,7 @@ Wire Wire Line
 	7700 6750 7900 6750
 Connection ~ 7900 6750
 $Comp
-L power:GND #PWR033
+L lepetocontrol-rescue:GND-power #PWR033
 U 1 1 61DB9A69
 P 7250 7400
 F 0 "#PWR033" H 7250 7150 50  0001 C CNN
@@ -311,7 +311,7 @@ F 3 "" H 7250 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DB9A6F
 P 7700 6700
 AR Path="/61DB9A6F" Ref="#PWR?"  Part="1" 
@@ -349,7 +349,7 @@ F 3 "" H 10200 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR045
+L lepetocontrol-rescue:GND-power #PWR045
 U 1 1 61DBC58E
 P 10200 8200
 F 0 "#PWR045" H 10200 7950 50  0001 C CNN
@@ -360,7 +360,7 @@ F 3 "" H 10200 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C15
+L lepetocontrol-rescue:C_Small-device C15
 U 1 1 61DBC594
 P 10550 6850
 F 0 "C15" H 10642 6896 50  0000 L CNN
@@ -375,7 +375,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 6750 10550 6750
 $Comp
-L power:GND #PWR047
+L lepetocontrol-rescue:GND-power #PWR047
 U 1 1 61DBC59C
 P 10550 6950
 F 0 "#PWR047" H 10550 6700 50  0001 C CNN
@@ -391,7 +391,7 @@ Wire Wire Line
 	10100 6750 10300 6750
 Connection ~ 10300 6750
 $Comp
-L power:GND #PWR041
+L lepetocontrol-rescue:GND-power #PWR041
 U 1 1 61DBC5A5
 P 9650 7400
 F 0 "#PWR041" H 9650 7150 50  0001 C CNN
@@ -402,7 +402,7 @@ F 3 "" H 9650 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DBC5AB
 P 10100 6700
 AR Path="/61DBC5AB" Ref="#PWR?"  Part="1" 
@@ -427,7 +427,7 @@ SENSE4
 Wire Wire Line
 	9250 7600 9650 7600
 $Comp
-L device:Crystal Y1
+L lepetocontrol-rescue:Crystal-device Y1
 U 1 1 61DDB96C
 P 1100 2750
 F 0 "Y1" V 1054 2881 50  0000 L CNN
@@ -440,7 +440,7 @@ $EndComp
 Wire Wire Line
 	1500 2900 1100 2900
 $Comp
-L device:C_Small C1
+L lepetocontrol-rescue:C_Small-device C1
 U 1 1 61DE0EBE
 P 750 2650
 F 0 "C1" H 658 2604 50  0000 R CNN
@@ -451,7 +451,7 @@ F 3 "~" H 750 2650 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L device:C_Small C2
+L lepetocontrol-rescue:C_Small-device C2
 U 1 1 61DE18A8
 P 750 2850
 F 0 "C2" H 658 2804 50  0000 R CNN
@@ -477,7 +477,7 @@ Wire Wire Line
 	900  2750 900  2800
 Connection ~ 750  2750
 $Comp
-L power:GND #PWR03
+L lepetocontrol-rescue:GND-power #PWR03
 U 1 1 61DE9077
 P 900 2800
 F 0 "#PWR03" H 900 2550 50  0001 C CNN
@@ -488,7 +488,7 @@ F 3 "" H 900 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x05 J4
+L lepetocontrol-rescue:Conn_01x05-conn J4
 U 1 1 61DEA4BA
 P 1650 1050
 F 0 "J4" H 1730 1092 50  0000 L CNN
@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 1250 800  1250
 $Comp
-L power:GND #PWR02
+L lepetocontrol-rescue:GND-power #PWR02
 U 1 1 61DF8F29
 P 800 1050
 F 0 "#PWR02" H 800 800 50  0001 C CNN
@@ -520,7 +520,7 @@ F 3 "" H 800 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61DF9AD6
 P 800 850
 AR Path="/61DF9AD6" Ref="#PWR?"  Part="1" 
@@ -543,7 +543,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 1950 1600 1950
 $Comp
-L device:R R19
+L lepetocontrol-rescue:R-device R19
 U 1 1 61E01EB4
 P 2000 2300
 F 0 "R19" H 2070 2346 50  0000 L CNN
@@ -554,7 +554,7 @@ F 3 "~" H 2000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L lepetocontrol-rescue:GND-power #PWR09
 U 1 1 61E06675
 P 2000 2450
 F 0 "#PWR09" H 2000 2200 50  0001 C CNN
@@ -575,7 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 2650 1500 2900
 $Comp
-L device:R R17
+L lepetocontrol-rescue:R-device R17
 U 1 1 61E10987
 P 1600 1800
 F 0 "R17" H 1670 1846 50  0000 L CNN
@@ -586,7 +586,7 @@ F 3 "~" H 1600 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61E10BFA
 P 1600 1500
 AR Path="/61E10BFA" Ref="#PWR?"  Part="1" 
@@ -599,7 +599,7 @@ F 3 "" H 1600 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switches:SW_Push SW1
+L lepetocontrol-rescue:SW_Push-switches SW1
 U 1 1 61E14E3E
 P 1600 2250
 F 0 "SW1" V 1646 2202 50  0000 R CNN
@@ -613,7 +613,7 @@ Wire Wire Line
 	1600 1950 1600 2050
 Connection ~ 1600 1950
 $Comp
-L power:GND #PWR06
+L lepetocontrol-rescue:GND-power #PWR06
 U 1 1 61E18EB6
 P 1600 2450
 F 0 "#PWR06" H 1600 2200 50  0001 C CNN
@@ -624,7 +624,7 @@ F 3 "" H 1600 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switches:SW_Push SW2
+L lepetocontrol-rescue:SW_Push-switches SW2
 U 1 1 61E1926E
 P 2000 1700
 F 0 "SW2" V 2046 1652 50  0000 R CNN
@@ -643,7 +643,7 @@ Wire Wire Line
 	1600 1500 1600 1650
 Connection ~ 1600 1500
 $Comp
-L device:C_Small C8
+L lepetocontrol-rescue:C_Small-device C8
 U 1 1 61E2407E
 P 4350 1350
 F 0 "C8" H 4442 1396 50  0000 L CNN
@@ -675,7 +675,7 @@ Wire Wire Line
 	5150 1200 5050 1200
 Connection ~ 5050 1200
 $Comp
-L device:C_Small C7
+L lepetocontrol-rescue:C_Small-device C7
 U 1 1 61E34A84
 P 3950 1350
 F 0 "C7" H 4042 1396 50  0000 L CNN
@@ -686,7 +686,7 @@ F 3 "~" H 3950 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C6
+L lepetocontrol-rescue:C_Small-device C6
 U 1 1 61E35081
 P 3500 1350
 F 0 "C6" H 3592 1396 50  0000 L CNN
@@ -697,7 +697,7 @@ F 3 "~" H 3500 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C5
+L lepetocontrol-rescue:C_Small-device C5
 U 1 1 61E3558A
 P 3050 1350
 F 0 "C5" H 3142 1396 50  0000 L CNN
@@ -731,7 +731,7 @@ Connection ~ 3950 1450
 Wire Wire Line
 	3950 1450 4350 1450
 $Comp
-L power:GND #PWR011
+L lepetocontrol-rescue:GND-power #PWR011
 U 1 1 61E4FCA6
 P 3050 1450
 F 0 "#PWR011" H 3050 1200 50  0001 C CNN
@@ -751,7 +751,7 @@ Connection ~ 5050 5150
 Wire Wire Line
 	5050 5150 5150 5150
 $Comp
-L power:GND #PWR013
+L lepetocontrol-rescue:GND-power #PWR013
 U 1 1 61E55318
 P 4950 5150
 F 0 "#PWR013" H 4950 4900 50  0001 C CNN
@@ -800,7 +800,7 @@ TXD
 Text Label 8250 4250 2    50   ~ 0
 RXD
 $Comp
-L conn:USB_OTG J3
+L lepetocontrol-rescue:USB_OTG-conn J3
 U 1 1 61EB8D64
 P 10700 2200
 F 0 "J3" H 10757 2667 50  0000 C CNN
@@ -813,7 +813,7 @@ $EndComp
 Wire Wire Line
 	10600 2600 10700 2600
 $Comp
-L power:GND #PWR04
+L lepetocontrol-rescue:GND-power #PWR04
 U 1 1 61EC23B7
 P 10600 2600
 F 0 "#PWR04" H 10600 2350 50  0001 C CNN
@@ -829,7 +829,7 @@ USB_DP
 Text Label 12300 2300 2    50   ~ 0
 USB_DM
 $Comp
-L device:R R18
+L lepetocontrol-rescue:R-device R18
 U 1 1 61F25826
 P 11550 1950
 F 0 "R18" H 11620 1996 50  0000 L CNN
@@ -845,7 +845,7 @@ Connection ~ 11550 2200
 Wire Wire Line
 	11550 2200 12300 2200
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61F2D0C5
 P 11550 1750
 AR Path="/61F2D0C5" Ref="#PWR?"  Part="1" 
@@ -860,7 +860,7 @@ $EndComp
 Wire Wire Line
 	11550 1750 11550 1800
 $Comp
-L regul:LM1117-3.3 U3
+L lepetocontrol-rescue:LM1117-3.3-regul U3
 U 1 1 61F3532C
 P 11500 2950
 F 0 "U3" H 11500 3192 50  0000 C CNN
@@ -877,7 +877,7 @@ Wire Wire Line
 Wire Wire Line
 	11100 2950 11200 2950
 $Comp
-L power:GND #PWR07
+L lepetocontrol-rescue:GND-power #PWR07
 U 1 1 61F5CEA6
 P 11500 3250
 F 0 "#PWR07" H 11500 3000 50  0001 C CNN
@@ -890,7 +890,7 @@ $EndComp
 Wire Wire Line
 	11800 2950 11950 2950
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61F64A0B
 P 12350 2950
 AR Path="/61F64A0B" Ref="#PWR?"  Part="1" 
@@ -903,7 +903,7 @@ F 3 "" H 12350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C4
+L lepetocontrol-rescue:C_Small-device C4
 U 1 1 61F6508E
 P 11950 3150
 F 0 "C4" H 12042 3196 50  0000 L CNN
@@ -922,7 +922,7 @@ Wire Wire Line
 	11950 3250 11500 3250
 Connection ~ 11500 3250
 $Comp
-L device:C_Small C3
+L lepetocontrol-rescue:C_Small-device C3
 U 1 1 61F751F8
 P 11100 3150
 F 0 "C3" H 11009 3104 50  0000 R CNN
@@ -966,7 +966,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 3950 1950 3950
 $Comp
-L conn:Conn_01x03 J5
+L lepetocontrol-rescue:Conn_01x03-conn J5
 U 1 1 6205866F
 P 13550 1950
 F 0 "J5" H 13630 1992 50  0000 L CNN
@@ -985,7 +985,7 @@ Wire Wire Line
 Wire Wire Line
 	13350 1850 13200 1850
 $Comp
-L power:GND #PWR014
+L lepetocontrol-rescue:GND-power #PWR014
 U 1 1 6206C88F
 P 13350 2050
 F 0 "#PWR014" H 13350 1800 50  0001 C CNN
@@ -996,7 +996,7 @@ F 3 "" H 13350 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 6206D1CD
 P 4850 1100
 AR Path="/6206D1CD" Ref="#PWR?"  Part="1" 
@@ -1011,7 +1011,7 @@ $EndComp
 Wire Wire Line
 	4850 1100 4850 1200
 $Comp
-L conn:Conn_01x05_Female J?
+L lepetocontrol-rescue:Conn_01x05_Female-conn J?
 U 1 1 61A2A0BE
 P 13600 7150
 AR Path="/61A2A0BE" Ref="J?"  Part="1" 
@@ -1024,7 +1024,7 @@ F 3 "~" H 13600 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x05_Female J?
+L lepetocontrol-rescue:Conn_01x05_Female-conn J?
 U 1 1 61A2A0C4
 P 13600 7900
 AR Path="/61A2A0C4" Ref="J?"  Part="1" 
@@ -1037,7 +1037,7 @@ F 3 "~" H 13600 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 61A2A0CA
 P 13400 7700
 AR Path="/61A2A0CA" Ref="#PWR?"  Part="1" 
@@ -1050,7 +1050,7 @@ F 3 "" H 13400 7700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61A2A0D0
 P 13100 7700
 AR Path="/61A2A0D0" Ref="#PWR?"  Part="1" 
@@ -1117,7 +1117,7 @@ SCL
 Text Label 1950 3950 0    50   ~ 0
 SDA
 $Comp
-L switches:SW_Push SW5
+L lepetocontrol-rescue:SW_Push-switches SW5
 U 1 1 61BB893F
 P 1600 3350
 F 0 "SW5" V 1646 3302 50  0000 R CNN
@@ -1128,7 +1128,7 @@ F 3 "" H 1600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switches:SW_Push SW3
+L lepetocontrol-rescue:SW_Push-switches SW3
 U 1 1 61BB999E
 P 1150 3250
 F 0 "SW3" V 1196 3202 50  0000 R CNN
@@ -1139,7 +1139,7 @@ F 3 "" H 1150 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switches:SW_Push SW6
+L lepetocontrol-rescue:SW_Push-switches SW6
 U 1 1 61BB9C96
 P 1600 3050
 F 0 "SW6" V 1646 3002 50  0000 R CNN
@@ -1150,7 +1150,7 @@ F 3 "" H 1600 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L switches:SW_Push SW4
+L lepetocontrol-rescue:SW_Push-switches SW4
 U 1 1 61BB9F5C
 P 1150 3450
 F 0 "SW4" V 1196 3402 50  0000 R CNN
@@ -1161,7 +1161,7 @@ F 3 "" H 1150 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR053
+L lepetocontrol-rescue:GND-power #PWR053
 U 1 1 61C21A17
 P 650 3650
 F 0 "#PWR053" H 650 3400 50  0001 C CNN
@@ -1203,7 +1203,7 @@ SENSE2
 Text Label 3800 7550 2    50   ~ 0
 SENSE1
 $Comp
-L 74xx:74HC595 U?
+L lepetocontrol-rescue:74HC595-74xx U?
 U 1 1 61EF66D9
 P 2650 9800
 AR Path="/61EF66D9" Ref="U?"  Part="1" 
@@ -1216,7 +1216,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2650 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 61EF66DF
 P 2650 10500
 AR Path="/61EF66DF" Ref="#PWR?"  Part="1" 
@@ -1229,7 +1229,7 @@ F 3 "" H 2650 10500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61EF66E5
 P 2650 9200
 AR Path="/61EF66E5" Ref="#PWR?"  Part="1" 
@@ -1248,7 +1248,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 7500 9650 7500
 $Comp
-L conn:TEST_1P J10
+L lepetocontrol-rescue:TEST_1P-conn J10
 U 1 1 61F5EDE1
 P 3800 7550
 F 0 "J10" H 3858 7668 50  0000 L CNN
@@ -1259,7 +1259,7 @@ F 3 "" H 4000 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P J11
+L lepetocontrol-rescue:TEST_1P-conn J11
 U 1 1 61F5FDD4
 P 6250 7550
 F 0 "J11" H 6308 7668 50  0000 L CNN
@@ -1270,7 +1270,7 @@ F 3 "" H 6450 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P J13
+L lepetocontrol-rescue:TEST_1P-conn J13
 U 1 1 61F60394
 P 11050 7550
 F 0 "J13" H 11108 7668 50  0000 L CNN
@@ -1281,7 +1281,7 @@ F 3 "" H 11250 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:TEST_1P J12
+L lepetocontrol-rescue:TEST_1P-conn J12
 U 1 1 61F60B84
 P 8650 7550
 F 0 "J12" H 8708 7668 50  0000 L CNN
@@ -1300,9 +1300,11 @@ Wire Wire Line
 Wire Wire Line
 	3050 9500 4050 9500
 $Comp
-L 74xx:74HC4051 U8
+L lepetocontrol-rescue:74HC4051-74xx U8
 U 1 1 61F12B3E
 P 4350 9500
+AR Path="/61F12B3E" Ref="U8"  Part="1" 
+AR Path="/61D933FF/61F12B3E" Ref="U8"  Part="1" 
 F 0 "U8" H 4550 10150 50  0000 C CNN
 F 1 "74HC4051" H 4700 10050 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4350 9100 50  0001 C CNN
@@ -1333,7 +1335,7 @@ NoConn ~ 4750 9700
 NoConn ~ 4750 9800
 NoConn ~ 4750 9900
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 620904AC
 P 4050 9800
 AR Path="/620904AC" Ref="#PWR?"  Part="1" 
@@ -1348,7 +1350,7 @@ $EndComp
 Text Label 3800 9200 0    50   ~ 0
 SCL
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 620B2308
 P 2250 9700
 AR Path="/620B2308" Ref="#PWR?"  Part="1" 
@@ -1361,7 +1363,7 @@ F 3 "" H 2250 9700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 620BD5DD
 P 2250 10000
 AR Path="/620BD5DD" Ref="#PWR?"  Part="1" 
@@ -1374,7 +1376,7 @@ F 3 "" H 2250 10000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_02x05_Odd_Even J8
+L lepetocontrol-rescue:Conn_02x05_Odd_Even-conn J8
 U 1 1 620C9394
 P 1150 9600
 F 0 "J8" H 1200 10017 50  0000 C CNN
@@ -1385,7 +1387,7 @@ F 3 "~" H 1150 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_02x05_Odd_Even J9
+L lepetocontrol-rescue:Conn_02x05_Odd_Even-conn J9
 U 1 1 620CA289
 P 1150 10500
 F 0 "J9" H 1200 10917 50  0000 C CNN
@@ -1402,7 +1404,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 9200 4050 9200
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 620FC212
 P 4350 9000
 AR Path="/620FC212" Ref="#PWR?"  Part="1" 
@@ -1472,7 +1474,7 @@ Wire Wire Line
 	950  9800 700  9800
 Connection ~ 950  9800
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 621A6866
 P 700 9800
 AR Path="/621A6866" Ref="#PWR?"  Part="1" 
@@ -1485,7 +1487,7 @@ F 3 "" H 700 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 621A6C43
 P 700 9500
 AR Path="/621A6C43" Ref="#PWR?"  Part="1" 
@@ -1508,7 +1510,7 @@ Wire Wire Line
 	950  10700 700  10700
 Connection ~ 950  10700
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 621D1E0D
 P 700 10700
 AR Path="/621D1E0D" Ref="#PWR?"  Part="1" 
@@ -1521,7 +1523,7 @@ F 3 "" H 700 10700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 621D21E7
 P 700 10400
 AR Path="/621D21E7" Ref="#PWR?"  Part="1" 
@@ -1594,7 +1596,7 @@ F 3 "" H 8350 10300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0119
+L lepetocontrol-rescue:GND-power #PWR0119
 U 1 1 61A8598D
 P 8150 9850
 F 0 "#PWR0119" H 8150 9600 50  0001 C CNN
@@ -1625,7 +1627,7 @@ OLED_DC
 Text Label 7600 10450 0    50   ~ 0
 OLED_CS
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61B0EDD4
 P 7800 9800
 AR Path="/61B0EDD4" Ref="#PWR?"  Part="1" 
@@ -1652,7 +1654,7 @@ OLED_DC
 Text Label 8250 3650 2    50   ~ 0
 OLED_CS
 $Comp
-L mechanical:MountingHole H5
+L lepetocontrol-rescue:MountingHole-mechanical H5
 U 1 1 61BA14F1
 P 12850 5250
 F 0 "H5" H 12950 5296 50  0000 L CNN
@@ -1663,7 +1665,7 @@ F 3 "~" H 12850 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H8
+L lepetocontrol-rescue:MountingHole-mechanical H8
 U 1 1 61BA1F02
 P 13650 5450
 F 0 "H8" H 13750 5496 50  0000 L CNN
@@ -1674,7 +1676,7 @@ F 3 "~" H 13650 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H7
+L lepetocontrol-rescue:MountingHole-mechanical H7
 U 1 1 61BA1F45
 P 13650 5250
 F 0 "H7" H 13750 5296 50  0000 L CNN
@@ -1685,7 +1687,7 @@ F 3 "~" H 13650 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mechanical:MountingHole H6
+L lepetocontrol-rescue:MountingHole-mechanical H6
 U 1 1 61BA1F77
 P 12850 5450
 F 0 "H6" H 12950 5496 50  0000 L CNN
@@ -1710,7 +1712,7 @@ Wire Wire Line
 	13400 7350 13400 7400
 Connection ~ 13400 7350
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 61CCF42F
 P 13400 7400
 AR Path="/61CCF42F" Ref="#PWR?"  Part="1" 
@@ -1723,7 +1725,7 @@ F 3 "" H 13400 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C10
+L lepetocontrol-rescue:CP-device C10
 U 1 1 61CD2DFF
 P 6100 10050
 F 0 "C10" H 6218 10096 50  0000 L CNN
@@ -1734,7 +1736,7 @@ F 3 "~" H 6100 10050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L lepetocontrol-rescue:VCC-power #PWR?
 U 1 1 61CD5FDE
 P 6100 9900
 AR Path="/61CD5FDE" Ref="#PWR?"  Part="1" 
@@ -1747,7 +1749,7 @@ F 3 "" H 6100 9900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 61CD65ED
 P 6100 10200
 AR Path="/61CD65ED" Ref="#PWR?"  Part="1" 
@@ -1760,7 +1762,7 @@ F 3 "" H 6100 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L lepetocontrol-rescue:GND-power #PWR?
 U 1 1 61CA6C23
 P 4350 10200
 AR Path="/61CA6C23" Ref="#PWR?"  Part="1" 
