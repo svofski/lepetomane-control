@@ -1,6 +1,6 @@
 # Pétocontrôle
 
-![front](doc/front.jpg)
+![front](doc/front_vfd.jpg)
 
 This is a MIDI control surface that sends CC messages when you turn the knobs. The main features are:
 
@@ -17,10 +17,5 @@ The knobs are mechanisms ripped out from cheap potentiometers, they have little 
 ![front](doc/sideview.jpg)
 
 ## Design files
-Made in KiCad 5, so KiCanvas doesn't pick it up. 
- * [Schematics](doc/lepetocontrol.pdf)
-
-## TODO
- - [ ] remove dependencies on Wire and libmaple
- - [ ] add support for buttons and OLED
- - [ ] try a second row of knobs
+ * [Schematics and PCB (KiCanvas)](https://kicanvas.org/?github=https://github.com/svofski/lepetomane-control/tree/master/kicad)
+ 
