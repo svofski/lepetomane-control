@@ -6,6 +6,7 @@ This is a MIDI control surface that sends CC messages when you turn the knobs. T
 
  * magnetic encoders (AS5600) with real potentiometer mechanics for ultra-smooth potentiometer-like feel
  * beautiful 0402 orange LEDs that show knob positions
+ * Futaba 8-MD-06INKM VFD display
 
 I wanted smooth feel encoders that work like proper potentiometers. These days everything is implemented using notchy encoders and although smooth input encoders do exist, they are somewhat uncommon.
 
